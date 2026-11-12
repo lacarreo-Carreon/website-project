@@ -110,4 +110,24 @@ footer{
     transform:translateY(-5px);
     transition:0.3s;
 }
-    
+    /* Fix flavor card layout */
+.flavor-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: stretch;
+gap: 25px;
+}
+
+.flavor-container .flavor-card {
+box-sizing: border-box;
+width: 260px;
+max-width: 100%;
+margin: 0;
+height: auto;
+position: static;
+}
+
+.flavor-container .flavor-card h3 {
+margin-top: 0;
+}
