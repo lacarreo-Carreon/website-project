@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Discover beef jerky at Mamaeva's.">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description"
+content="Explore Mamaeva's beef jerky selection.">
 <title>Mamaeva's Carne Seca | Home</title>
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,162 +20,131 @@
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About Us</a>
-<a href="#flavors">Our Selection</a>
+<a href="#selection">Our Selection</a>
 <a href="#spice">Spice Levels</a>
 <a href="#contact">Contact Us</a>
 </nav>
 
 <main>
 
-<section class="welcome">
-<h2>Welcome to Mamaeva's</h2>
+<section class="welcome" id="about">
+<h2>Welcome to Mamaeva's Carne Seca</h2>
+
 <p>
 Looking for a good snack? We've got you covered.
 Our beef jerky comes in different seasonings
-and spice levels, so there's something for everyone.
+and spice levels, so there's something for
+everyone.
 </p>
-<a href="#flavors" class="button">
-Explore Our Selection
-</a>
-</section>
 
-<section id="about" class="about">
-<h2>About Us</h2>
 <p>
-At Mamaeva's, we love a good snack.
-Our jerky is inspired by traditional
-seasonings and the snacks we grew up enjoying.
-</p>
-<p>
-Whether you're on a road trip, hanging out
-with friends, or just craving something
-savory, our beef jerky is a great choice.
+Whether you like it mild, tangy, or with a
+little extra heat, our jerky is made to
+satisfy your cravings.
 </p>
 </section>
 
-<section id="flavors">
+<section class="selection" id="selection">
 <h2>Explore Our Selection</h2>
 <p>Find your new favorite.</p>
 
-<div class="flavor-container">
+<div class="jerky-grid">
 
-<article class="flavor-card">
-<div class="image-placeholder"
+<div class="jerky-item">
+<div class="jerky-placeholder"
 role="img"
 aria-label="Placeholder for Original beef jerky photo">
 </div>
 <h3>Original</h3>
-<p>
-A classic choice with a rich,
-savory taste.
-</p>
-<span class="spice-label mild">Mild</span>
-</article>
+</div>
 
-<article class="flavor-card">
-<div class="image-placeholder"
+<div class="jerky-item">
+<div class="jerky-placeholder"
 role="img"
 aria-label="Placeholder for Chile Limón beef jerky photo">
 </div>
 <h3>Chile Limón</h3>
-<p>
-A tangy combination of lime
-and chili with a little kick.
-</p>
-<span class="spice-label medium">Medium</span>
-</article>
+</div>
 
-<article class="flavor-card">
-<div class="image-placeholder"
+<div class="jerky-item">
+<div class="jerky-placeholder"
 role="img"
 aria-label="Placeholder for Extra Spicy beef jerky photo">
 </div>
 <h3>Extra Spicy</h3>
-<p>
-A bold option for anyone
-who enjoys some serious heat.
-</p>
-<span class="spice-label hot">Hot</span>
-</article>
+</div>
 
 </div>
 </section>
 
-<section id="spice" class="spice-section">
+<section class="spice-section" id="spice">
 <h2>Choose Your Spice Level</h2>
+
 <p>
 Everyone has their preference.
-Take a look at our options and
-find the right amount of heat for you.
+Take a look at our options and find
+the right amount of heat for you.
 </p>
 
-<div class="spice-guide">
+<div class="spice-grid">
 
-<div class="spice-option">
+<div class="spice-card">
 <h3>Original</h3>
-<p class="pepper">🌶️</p>
-<h4>Mild</h4>
 <p>Simple, savory, and easy to enjoy.</p>
+<span class="spice-label">Mild</span>
 </div>
 
-<div class="spice-option">
+<div class="spice-card">
 <h3>Chile Limón</h3>
-<p class="pepper">🌶️🌶️</p>
-<h4>Medium</h4>
 <p>A little heat with a tangy twist.</p>
+<span class="spice-label">Medium</span>
 </div>
 
-<div class="spice-option">
+<div class="spice-card">
 <h3>Extra Spicy</h3>
-<p class="pepper">🌶️🌶️🌶️</p>
-<h4>Hot</h4>
 <p>For those who like it extra spicy.</p>
+<span class="spice-label">Hot</span>
 </div>
 
 </div>
 </section>
 
-<section id="contact" class="contact">
-<h2>Have a Question?</h2>
+<section class="contact" id="contact">
+<h2>Have a Question or Review?</h2>
+
 <p>
 We'd love to hear from you!
-Fill out the form below.
+Leave your question or feedback below.
 </p>
 
-<form id="contact-form">
-<label for="name">Name</label>
-<input
-type="text"
+<form class="contact-form">
+
+<label for="name">Your Name</label>
+<input type="text"
 id="name"
 name="name"
-placeholder="Your name"
-required
->
+placeholder="Enter your name"
+required>
 
-<label for="email">Email</label>
-<input
-type="email"
+<label for="email">Email Address</label>
+<input type="email"
 id="email"
 name="email"
-placeholder="Your email address"
-required
->
+placeholder="Enter your email"
+required>
 
 <label for="message">Message</label>
-<textarea
-id="message"
+<textarea id="message"
 name="message"
-rows="5"
-placeholder="What would you like to ask?"
-required
-></textarea>
+placeholder="Write your question or review here..."
+required></textarea>
 
-<button type="submit">Send Message</button>
-<p id="form-status" role="status"></p>
+<button type="button">Send Message</button>
+
 </form>
 
 <p class="form-note">
-Contact form demonstration.
+This form is a demonstration.
 Messages are not sent or stored yet.
 </p>
 </section>
@@ -186,16 +156,5 @@ Messages are not sent or stored yet.
 <p>Made for Every Craving</p>
 </footer>
 
-<script>
-document.getElementById("contact-form")
-.addEventListener("submit", function(event) {
-event.preventDefault();
-document.getElementById("form-status")
-.textContent =
-"This is a demo form. Your message has not been sent.";
-});
-</script>
-
 </body>
 </html>
-
